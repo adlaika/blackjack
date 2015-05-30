@@ -7,6 +7,7 @@ class window.HandView extends Backbone.View
     @collection.on 'add remove change', => @render()
     @render()
 
+
   render: ->
     @$el.children().detach()
     @$el.html @template @collection
@@ -16,4 +17,6 @@ class window.HandView extends Backbone.View
       @$('.score').text 'ace valued at one: ' + @collection.scores()[0] + ', ace valued at ten: ' + @collection.scores()[1]
     else
       @$('.score').text @collection.scores()[0]
+
+
 

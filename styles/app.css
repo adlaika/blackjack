@@ -16,3 +16,15 @@
 .hand {
   overflow: auto;
 }
+
+body {
+  background-image: url('http://baileysrestaurants.com/wp-content/themes/baileys-restaurants/assets/images/background.jpg');
+}
+
+h2 {
+  color: white;
+}
+
+.wingif {
+  margin-top: 50px;
+}

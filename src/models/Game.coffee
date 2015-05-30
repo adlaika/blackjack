@@ -53,7 +53,8 @@ class window.Game extends Backbone.Model
   endGame: (winner) ->
     @set('isRunning', false)
     # console.log(winner)
-    @set('winner', winner)
+    @set('winner', winner.isDealer)
+    debugger
 
 
 

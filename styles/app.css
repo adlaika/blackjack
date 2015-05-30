@@ -4,21 +4,31 @@
   width: auto;
   border-radius: 5px;
   height: auto;
+  margin-bottom: 20px;
   margin-right: 20px;
+ -webkit-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.52);
+ -moz-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.52);
+ box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.52);
 }
 
 .covered {
   width: 120px;
   height: 167px;
   background-image: url('../img/card-back.png');
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.52);
+  -moz-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.52);
+  box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.52);
 }
 
 .hand {
   overflow: auto;
+  margin-bottom: 20px;
 }
 
 body {
   background-image: url('http://baileysrestaurants.com/wp-content/themes/baileys-restaurants/assets/images/background.jpg');
+  font-family: 'Chewy', cursive;
 }
 
 h2 {

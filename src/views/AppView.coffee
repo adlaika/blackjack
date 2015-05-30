@@ -31,5 +31,6 @@ class window.AppView extends Backbone.View
     @$el.children().detach()
     @$el.html @template()
     $('.wingif').append('<div>').html '<img src="https://mypenmyvoice.files.wordpress.com/2014/09/tumblr_mi6xc7l6be1s5ys1do1_500.gif">'
+
     @$('.player-hand-container').html new HandView(collection: @model.get 'playerHand').el
     @$('.dealer-hand-container').html new HandView(collection: @model.get 'dealerHand').el

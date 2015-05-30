@@ -42,23 +42,6 @@ class window.Game extends Backbone.Model
     if ((@get('dealerHand').scores()[1] == 21) && @get('isRunning')) then @endGame(@get('dealerHand'))
     if ((@get('dealerHand').scores()[0] > 21) && @get('isRunning')) then @endGame(@get('playerHand'))
 
-  # checkScores: (hand) ->
-  #   console.log(@get('playerHand'))
-  #   console.log(@get('dealerHand'))
-  #   if hand.get('isDealer')
-  #     opponent = @get('playerHand')
-  #     console.log('opponent set to player')
-  #   else
-  #     opponent = @get('dealerHand')
-  #     console.log('opponent set to dealer')
-  #     # if !(@get('isRunning'))
-  #     #   console.log('opponent: ' + JSON.stringify(opponent))
-  #   #Blackjack!
-    # if ((hand.scores()[1] == 21) && @get('isRunning')) then @endGame(hand)
-    # if ((hand.scores()[0] > 21) && @get('isRunning'))
-  #     debugger
-  #     @endGame(opponent)
-
   dealerTurn: ->
     @get('dealerHand').at(0).flip()
     while @get('dealerHand').scores()[0] < 17
@@ -69,7 +52,8 @@ class window.Game extends Backbone.Model
 
   endGame: (winner) ->
     @set('isRunning', false)
-    console.log(winner)
+    # console.log(winner)
+    @set('winner', winner)
 
 
 

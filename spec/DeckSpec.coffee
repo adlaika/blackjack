@@ -17,3 +17,4 @@ describe 'deck', ->
   describe 'testy test', ->
     it 'do whatevs', ->
       assert.strictEqual true, true
+
